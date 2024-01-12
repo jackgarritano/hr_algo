@@ -34,7 +34,7 @@ func findPairs(items []int) (pairs [][]int, total int) {
 }
 
 func timeZoneSort(items []int) {
-	var counts [23]int
+	var counts [24]int
 	for _, item := range items {
 		counts[item+11]++
 	}
