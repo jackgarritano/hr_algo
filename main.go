@@ -12,8 +12,8 @@ func main() {
 func findPairs(items []int) (pairs [][]int, total int) {
 	timeZoneSort(items)
 	sum1 := 0
-	for i := 0; i < len(items); i += 2 {
-		sum1 += findDistance(items[i], items[i+1])
+	for j := 0; j < len(items); j += 2 {
+		sum1 += findDistance(items[j], items[j+1])
 	}
 	sum2 := findDistance(items[0], items[len(items)-1])
 	for i := 1; i < len(items)-1; i += 2 {
